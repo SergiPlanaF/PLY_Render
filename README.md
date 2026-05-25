@@ -32,7 +32,23 @@ Load a point cloud from an ASCII-formatted PLY file containing vertex positions 
 - **Translate**: Use the UI sliders for X, Y, and Z positioning.
 - **Rotate**: Use the UI sliders for Yaw, Pitch, and Roll.
 - **Zoom**: Use the UI sliders for zoom control.
-  
+
+## Data Structure
+Each point in the cloud is represented using the following struct:
+
+```csharp
+struct point
+{
+    public float x;
+    public float y;
+    public float z;
+    public int R;
+    public int G;
+    public int B;
+    public int A;
+}
+```
+
 ## Transformation Pipeline
 Each vertex in the point cloud is transformed in real time using the current view parameters (yaw, pitch, roll, zoom, and pan offsets). The transformation is applied in the following order:
 
