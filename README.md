@@ -36,7 +36,7 @@ Load a point cloud from an ASCII-formatted PLY file containing vertex positions 
 ## Example PLY File
 The repository includes a sample PLY file with colors: Cube_Color.ply. You can open it directly from the application for testing.
 Additional examples for reference:
-ply
+'''ply
 format ascii 1.0
 element vertex 3
 property float x
@@ -48,4 +48,4 @@ property uchar blue
 end_header
 0 0 0 255 0 0
 0 0 1.0 0 0 255 0
-0 1.0 0 0 0 0 255
+0 1.0 0 0 0 0 255'''
